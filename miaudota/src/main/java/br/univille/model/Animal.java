@@ -15,6 +15,13 @@ public class Animal {
     private boolean castrado;
     private String humor;
     private boolean vacinado;
+    private String tipo;
+    public String getTipo() {
+        return tipo;
+    }
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
     private String foto;
     private String descricao;
     public Long getId() {

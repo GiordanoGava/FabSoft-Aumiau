@@ -36,6 +36,7 @@ public class AnimalService {
             animal.setIdade(animalAtualizado.getIdade());
             animal.setCastrado(animalAtualizado.isCastrado());
             animal.setHumor(animalAtualizado.getHumor());
+            animal.setTipo(animalAtualizado.getTipo());
             animal.setVacinado(animalAtualizado.isVacinado());
             animal.setDescricao(animalAtualizado.getDescricao());
             return animalRepository.save(animal);

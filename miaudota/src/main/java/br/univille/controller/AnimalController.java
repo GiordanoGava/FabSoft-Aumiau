@@ -50,6 +50,7 @@ public class AnimalController {
                 animal.setNome(animalAtualizado.getNome());
                 animal.setIdade(animalAtualizado.getIdade());
                 animal.setCastrado(animalAtualizado.isCastrado());
+                animal.setTipo(animalAtualizado.getTipo());
                 animal.setHumor(animalAtualizado.getHumor());
                 animal.setVacinado(animalAtualizado.isVacinado());
                 animal.setDescricao(animalAtualizado.getDescricao());
