@@ -20,6 +20,9 @@ public class Usuario {
     private int idade;
     private String numeroResidencia;
     private String pontoReferencia;
+    private String cpf;
+    private String cnpj; 
+    private String senha;
     public Long getId() {
         return id;
     }
@@ -85,6 +88,30 @@ public class Usuario {
     }
     public void setPontoReferencia(String pontoReferencia) {
         this.pontoReferencia = pontoReferencia;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getCnpj() {
+        return cnpj;
+    }
+
+    public void setCnpj(String cnpj) {
+        this.cnpj = cnpj;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
     
     

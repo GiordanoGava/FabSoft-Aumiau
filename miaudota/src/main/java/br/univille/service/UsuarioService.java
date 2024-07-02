@@ -1,12 +1,13 @@
 package br.univille.service;
 
-import br.univille.model.Usuario;
-import br.univille.repository.UsuarioRepository;
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.Optional;
+import br.univille.model.Usuario;
+import br.univille.repository.UsuarioRepository;
 
 @Service
 public class UsuarioService {
@@ -35,6 +36,9 @@ public class UsuarioService {
             usuario.setNome(usuarioAtualizado.getNome());
             usuario.setEmail(usuarioAtualizado.getEmail());
             usuario.setTelefone(usuarioAtualizado.getTelefone());
+            usuario.setTelefone(usuarioAtualizado.getSenha());
+            usuario.setTelefone(usuarioAtualizado.getCnpj());
+            usuario.setTelefone(usuarioAtualizado.getCpf());
             return usuarioRepository.save(usuario);
         }).orElseGet(() -> {
             usuarioAtualizado.setId(id);

@@ -1,12 +1,13 @@
 package br.univille.service;
 
-import br.univille.model.Animal;
-import br.univille.repository.AnimalRepository;
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.Optional;
+import br.univille.model.Animal;
+import br.univille.repository.AnimalRepository;
 
 @Service
 public class AnimalService {
